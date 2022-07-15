@@ -1,0 +1,14 @@
+<cdk-virtual-scroll-viewport
+    orientation="horizontal"
+    itemSize="{{ stepLength }}"
+>
+    <div class="timeline-base">
+        <div
+            *cdkVirtualFor="let tick of ticks"
+            class="timeline-tick-base"
+            [style.width.px]="stepLength"
+        >
+            <div class="timeline-tick"></div>
+        </div>
+    </div>
+</cdk-virtual-scroll-viewport>

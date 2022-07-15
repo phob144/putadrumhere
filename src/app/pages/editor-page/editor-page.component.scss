@@ -1,0 +1,13 @@
+@use "../../../styles.scss" as x;
+
+:host {
+    display: flex;
+
+    width: calc(100% - 2 * 0.5em);
+    height: calc(100% - 2 * 0.5em);
+
+    padding: 0.5em;
+    gap: 0.5em;
+
+    @include x.view-primary;
+}

@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+$foreground: #ffffff;
+
+$background-primary: #202020;
+$background-secondary: #303030;
+
+$background-interactive-primary: #505050;
+$background-interactive-secondary: #404040;
+
+@mixin view-foreground {
+    color: $foreground;
+    font-family: "Open Sans", sans-serif;
+}
+
+@mixin view-primary {
+    background-color: $background-primary;
+
+    @include view-foreground;
+}
+
+@mixin view-secondary {
+    background-color: $background-secondary;
+
+    @include view-foreground;
+}
+
+@mixin view-i-primary {
+    background-color: $background-interactive-primary;
+
+    @include view-foreground;
+}
+
+@mixin view-i-secondary {
+    background-color: $background-interactive-secondary;
+
+    @include view-foreground;
+}
